@@ -1,0 +1,9 @@
+{
+  "name": "spotify-status-on-slack",
+  "version": "1.0.0",
+  "description": "A very simple `bash` script to set Slack status to your currently playing track on Spotify.",
+  "main": "main.sh",
+  "keywords": ["Slack", "Spotify", "Status"],
+  "author": "Michele Pangrazzi <xmikex83@gmail.com>",
+  "license": "MIT"
+}
