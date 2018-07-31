@@ -9,7 +9,7 @@ A very simple `bash` script to set Slack status to your currently playing track 
 
 - Set `LEGACY_TOKEN` var to the correct value. For more info, read [here](https://api.slack.com/custom-integrations/legacy-tokens)
 
-- Set a reasonable crontab, e.g. to your working hours
+- Set a reasonable personal crontab, e.g. to your working hours
 
   ```bash
   * 9-18 * * 1-5 ./main.sh >/dev/null 2>&1 # remember to set correctly the path of main.sh
