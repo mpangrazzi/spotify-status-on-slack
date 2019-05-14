@@ -15,6 +15,8 @@ A very simple `bash` script to set Slack status to your currently playing track 
   * 9-18 * * 1-5 ./main.sh >/dev/null 2>&1 # remember to set correctly the path of main.sh
   ```
 
+  On Mac OS X it's better to use `launchd` instead of crontab. You can use [this very good plist generator](http://launched.zerowidth.com).
+
 - Listen to a song on Spotify :) You'll see that your Slack status will be updated, e.g.:
 
   ![Status](docs/status.png "Status")
