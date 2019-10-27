@@ -30,6 +30,12 @@ function getSong() {
   echo $SONG
 }
 
+pgrep Spotify > /dev/null
+if [ $? -ne 0 ]; then
+  echo 'Spotify is not running, exiting'
+  exit 0
+fi
+
 state=$(osascript -e 'tell application "Spotify" to player state')
 echo "$(date) Spotify state: $state"
 
@@ -45,4 +51,4 @@ else
 fi
 
 echo "Done"
-exit
+exit 0
