@@ -33,6 +33,7 @@ function getSong() {
 pgrep Spotify > /dev/null
 if [ $? -ne 0 ]; then
   echo 'Spotify is not running, exiting'
+  reset
   exit 0
 fi
 
